@@ -4,16 +4,16 @@
   "description": "HTML, CSS, Sass, Javascript in React game demo. Click a tile to reveal either red or blue; score is tracked. ",
   "main": "index.js",
   "scripts": {
-    "client-install" : "npm install --prefix client",
-    "start": "node server.js",
-    "client" : "npm start --prefix client",
-    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "client-install": "npm install --prefix client",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix"
-
   },
   "author": "Tim Ocampo",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4"
   }
 }
